@@ -1,9 +1,8 @@
-import Strings.LongestSubstringWithoutRepeat;
+import stacks.ValidParanthesis;
+import strings.LongestSubstringWithoutRepeat;
 import arrays.SellStock;
 import arrays.TwoSumProblem;
 import hashmap.Anagaram1;
-
-import java.util.*;
 
 public class SolutionTemplate {
 
@@ -14,6 +13,13 @@ public class SolutionTemplate {
         SellStock.run();
         Anagaram1.solution();
         LongestSubstringWithoutRepeat.solution();
+
+        // Paranthesis
+        ValidParanthesis validParanthesis = new ValidParanthesis();
+        if (validParanthesis.validate(")[]{}"))
+            System.out.println("valid");
+        else
+            System.out.println("Invalid");
 
     }
 }
