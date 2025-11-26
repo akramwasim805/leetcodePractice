@@ -1,8 +1,10 @@
+import arrays.UniqeTriplet;
 import stacks.ValidParanthesis;
 import strings.LongestSubstringWithoutRepeat;
 import arrays.SellStock;
 import arrays.TwoSumProblem;
 import hashmap.Anagaram1;
+import strings.ReversString;
 
 public class SolutionTemplate {
 
@@ -20,6 +22,20 @@ public class SolutionTemplate {
             System.out.println("valid");
         else
             System.out.println("Invalid");
+
+        ReversString rStr = new ReversString();
+        char str [] = new char[] {'w', 'a','k','m','o'};
+        rStr.solve(str);
+        System.out.println(str);
+
+
+        // triplets
+
+        UniqeTriplet obj = new UniqeTriplet();
+        int[] ar = {-1,0,1,2,-1,-4};
+
+        System.out.println(obj.solve(ar));
+
 
     }
 }
