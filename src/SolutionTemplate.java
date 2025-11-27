@@ -1,3 +1,4 @@
+import arrays.MovingAverage;
 import arrays.UniqeTriplet;
 import stacks.ValidParanthesis;
 import strings.LongestSubstringWithoutRepeat;
@@ -35,6 +36,9 @@ public class SolutionTemplate {
         int[] ar = {-1,0,1,2,-1,-4};
 
         System.out.println(obj.solve(ar));
+
+        MovingAverage movingAverage = new MovingAverage();
+        System.out.println(movingAverage.solution(new int[] {1,12,-5,-6,50,3}, 4));
 
 
     }
